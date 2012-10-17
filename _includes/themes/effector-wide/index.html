@@ -1,0 +1,8 @@
+<div class="wrapper">
+<ul class="postsList">
+{% for post in site.posts limit: 15%}
+<li><span>{{ post.date | date: "%b %d, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+<li><a class="btn"  href="/archive/">存档</a> →</li>
+</ul>
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.author }}"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/css/effector-wide.css">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS for {{ site.title }}" href="/feed.xml">
+</head>
+<body onload="prettyPrint()">
+
+  <div class="container">
+      <h1 class="sitename">Fengz</h1>
+      <div class="nav">
+<a href="/">主页</a>
+<a href="/archive/">存档</a>
+<a href="/links">链接</a>
+<a href="/search">搜索</a>
+</div>
+{{ content }}
+<footer>
+  <p><small><a href="https://github.com/pala/pala.github.com">Designed</a> by <a href="http://ztpala.com">Tao Zhang</a> | Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="http://pages.github.com/">GitHub Pages</a> | 版权声明：<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/">CC BY-NC-SA 3.0</a> | <span class="label label-success">{{site.time | date:"%Y-%m-%d"}}</span></small></p>
+  <!-- inspired by http://effectortheme.tumblr.com/ -->
+</footer>
+</div>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/google-code-prettify/prettify.js"></script>
+{% if page.url != "/" %}
+<script>
+$(function(){
+  $(document).keydown(function(e) {
+    var url = false;
+        if (e.which == 37 || e.which == 74) {  // Left arrow key code
+            {% if page.previous %}
+        url = '{{page.previous.url}}';
+        {% endif %}
+        }
+        else if (e.which == 39 || e.which == 75) {  // Right arrow key code
+            {% if page.next %}
+        url = '{{page.next.url}}';
+        {% endif %}
+        }
+        if (url) {
+            window.location = url;
+        }
+  });
+})
+</script>
+{% endif %}
+</body>
+</html>

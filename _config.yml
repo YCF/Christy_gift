@@ -1,0 +1,12 @@
+markdown: rdiscount 
+permalink: /:year/:month/:day/:title 
+title: Fengz
+url: http://sync.sh
+subscribe: http://ztpala.com/feed.xml
+exclude: [ README.md, newpost.rb ]
+domain: sync.sh
+author: Fengz
+email: enjoyforfun+blog@gmail.com
+auto: true
+twitterID: ycf
+duoshuoShortname: sync

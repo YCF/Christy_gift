@@ -1,0 +1,41 @@
+<div class="wrapper">
+<article>
+<h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a> <small class="pull-right">{{ page.date | date:"%b %d, %Y" }}</small></h1>
+{{ content }}
+</article>
+<div>
+{% for tag in page.tags %}
+    <a class="label" href="/tag/#{{ tag }}">{{ tag }}</a>
+{% endfor %}</div>
+<!-- Duoshuo Comment BEGIN -->
+    <div class="ds-thread"></div>
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"{{site:duoshuoShortname}}"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+<!-- Duoshuo Comment END -->
+<hr>
+<ul class="pager">
+    {% if page.previous %}
+    <li class="previous">
+    <a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+    </li>
+    {% endif %} <small>按 j 或 k 翻页</small>
+    {% if page.next %} 
+    <li class="next">
+    <a href="{{ page.next.url }}" class="pull-right">{{ page.next.title }} &rarr;</a>
+    </li>
+    {% endif %}   
+</ul>
+<hr>
+<div class="wrapper">
+本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议</a>进行许可
+<hr>
+</div>
