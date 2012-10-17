@@ -49,21 +49,22 @@ body {
     font-family: 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    color: #555753;
+    color: #555;
 }
 a {
-    color: #729FCF;
+    color: #F95B1F;
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    color: #A33B14;
+    text-decoration: none;
 }
 a.label:hover {
-    color: #EEEEEC;
-    background-color: #F57900;
+    color: #fff;
+    background-color: #F95B1F;
 }
 p a {
-    border-bottom: 1px dashed #D3D7CF;
+    border-bottom: 1px dashed #CED1D1;
 }
 .container {
     width: 800px;
@@ -76,11 +77,11 @@ p {
     font-family: 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    color: #555753;
+    color: #555;
 }
 p small, ul small {
     font-size: 13px;
-    color: #BABDB6;
+    color: #999;
 }
 .lead {
     margin-bottom: 30px;
@@ -90,7 +91,7 @@ p small, ul small {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    color: #555753;
+    color: #555;
     margin: 0;
     text-rendering: optimizelegibility;
 }
