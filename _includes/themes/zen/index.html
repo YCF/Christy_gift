@@ -1,0 +1,17 @@
+<div id="posts">
+<ul class="postsList">
+{% for post in site.posts limit: 15%}
+{% if forloop.index == 1 %}
+<div class="post">
+<h1><a href="{{ post.url }}">{{ post.title }}</a> <small class="pull-right">{{ post.date | date:"%b %d, %Y" }}</small></h1>
+{{ post.content | truncate:480}}
+</div>
+
+{% endif %}
+{% if forloop.index > 1 %}
+<li><span>{{ post.date | date: "%b %d, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}
+<li><a class="btn"  href="/archive/">Archive</a> →</li>
+</ul>
+</div>
