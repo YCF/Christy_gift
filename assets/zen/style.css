@@ -74,7 +74,7 @@ overflow: hidden;
 	margin-left:89px;
 	background-position: 0 -35px;
 	width:95px;
-	line-height: 40px;
+	line-height: 50px;
 	padding:0;
 	position: absolute;
 	text-indent: 0;
@@ -103,8 +103,8 @@ overflow: hidden;
 height:70px;
 background: url('spirit.png') top left no-repeat;
 background-position: 0 -90px;
-line-height: 40px;
-font-size:14px;
+line-height: 45px;
+font-size:16px;
 border-top-right-radius:5px;
 border-top-left-radius:5px;
 
@@ -124,6 +124,27 @@ border-top-left-radius:5px;
 }
 #content .topbar a:hover{
 	color: #fafafa;
+}
+#content .wrapper{
+	width: 580px;
+margin-left: 100px;
+}
+#content .wrapper h2 {
+	color:#aaa;
+}
+.postsList {
+	list-style: none;
+}
+.postsList li span {
+	color:#aaa;
+}
+.postsList li a {
+	text-decoration: none;
+	color:#D90000;
+
+}
+.postsList li a:hover {
+	text-decoration: underline;
 }
 .post {
 	width:580px;
