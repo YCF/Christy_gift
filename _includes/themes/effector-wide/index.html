@@ -4,7 +4,7 @@
 {% if forloop.index == 1 %}
 <article>
 <h1><a href="{{ post.url }}">{{ post.title }}</a> <small class="pull-right">{{ post.date | date:"%b %d, %Y" }}</small></h1>
-{{ post.content | truncate:120}}
+{{ post.content | truncate:480}}
 </article>
 
 {% endif %}
