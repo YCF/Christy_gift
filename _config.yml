@@ -1,8 +1,8 @@
 markdown: rdiscount 
-permalink: /:year/:month/:day/:title 
-title: Fengz
+permalink: /:categories/:title 
+title: 诗云
 url: http://sync.sh
-subscribe: http://ztpala.com/feed.xml
+subscribe: http://sync.sh/feed.xml
 exclude: [ README.md, newpost.rb ]
 domain: sync.sh
 author: Fengz
