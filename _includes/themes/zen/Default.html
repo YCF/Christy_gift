@@ -27,7 +27,7 @@
                     <ul class="nav">
                         {% for link in site.navigation %} 
                         {% assign current = nil %} 
-                        {% if page.url == link.url or page.layout == link.layout %} 
+                        {% if page.url == link.url or page.layout == link.layout or page.categories == 'Blog' %} 
                         {% assign current = 'current' %} 
                         {% endif %}
                         <li class="{{ current }}">
