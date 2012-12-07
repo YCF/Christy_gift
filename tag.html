@@ -5,7 +5,7 @@ permalink: /tag/
 ---
 <div class="wrapper">
 {% for tag in site.tags %}
-<a name="{{ tag | first }}"><h2>{{ tag | first }} - {{tag | size}}</h2></a>
+<a name="{{ tag | first }}"><h2>{{ tag | first }} - {{tag }}</h2></a>
     <ul  class="unstyled">
     {% for post in tag.last %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
