@@ -218,10 +218,15 @@ line-height: 1.4em;
 	padding:15px;
 	margin-left:90px;
 	line-height: 1.5em;
-	font-size:18px;
+	font-size:16px;
 	color:#444;
 
 }
+blockquote {
+padding-left: 1.5em;
+border: 4px solid #D1D1D1;
+}
+.post p {margin-bottom:1.5em;}
 .post h1 a{
 	display:block;
 	width:560px;
