@@ -30,6 +30,8 @@
                         {% if page.url == link.url or page.layout == link.layout or page.layout == 'post' %} 
                         {% assign current = 'current' %} 
                         {% endif %}
+                        test:{{ page.category }} 
+                        + {{ page.layout }} + {{ link.category }} + {{ link.layout }}
                         <li class="{{ current }}">
                             <a class="{{ current }}" href="{{ link.url }}">
                                 {{ link.text }}
