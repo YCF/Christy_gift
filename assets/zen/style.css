@@ -71,9 +71,9 @@ overflow: hidden;
 }
 #sidebar .nav li.current a{	
 	height:40px;
-	margin-left:84px;
-	background-position: 5px -35px;
-	width:95px;
+margin-left: 71px;
+background-position: 18px -35px;
+width: 120px;
 	line-height: 50px;
 	padding:0;
 	text-align: center;
@@ -81,8 +81,8 @@ overflow: hidden;
 	text-indent: 0;
 }
 #sidebar .nav li.current a:hover{
-	margin-left:84px;
-	width:95px;
+	margin-left:71px;
+	width:120px;
 }
 #sidebar .nav li a:hover {
 	margin-left:15px;
