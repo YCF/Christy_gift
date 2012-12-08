@@ -27,7 +27,7 @@ margin:auto auto 5px 100px;
   color: #92411C;
   text-shadow: 0 -1px -1px #333;
 	}
-	#header p{
+	#header p{color:#92411C;
 		font-size:14px;
 		text-shadow:0 1px 1px #ddd;
 		margin:15px auto 25px 120px;
@@ -104,7 +104,7 @@ width: 120px;
 height:70px;
 background: url('spirit.png') top left no-repeat;
 background-position: 0 -90px;
-line-height: 45px;
+ine-height: 48px;
 font-size:16px;
 border-top-right-radius:5px;
 border-top-left-radius:5px;
@@ -112,26 +112,50 @@ border-top-left-radius:5px;
 
 }
 #content .topbar a{
-	color:#aaa;
+	color:#616161;
 	margin:auto 12px;
 	text-decoration: none;
-	text-shadow: 0 -1px 1px #111;
+	text-shadow: 0 1px -1px #838080;
 	-webkit-transition: color .3s ease-out;
 	transition: color .3s ease-out;
 }
 
 #content .topbar a.rss{
 	float:right;
+	margin-right: 14px;
 }
 #content .topbar a:hover{
 	color: #fafafa;
 }
-#content .wrapper{
+#content .archive{
 	width: 580px;
 margin-left: 100px;
 }
-#content .wrapper h2 {
-	color:#aaa;
+#content .archive h2 {
+	color:#a8a8a8;
+}
+#content .archive ul {
+	padding:0;
+}
+#content .archive li{
+	width: 570px;
+margin: 10px auto 10px 0px;
+padding-right: 20px;
+padding-left: 20px;
+padding-bottom: 20px;
+}
+#content .archive li span {
+		color:#808080;
+	font-size:16px;
+	margin-right: 20px;
+}
+#content .archive li a{
+		text-decoration: none;
+	color:#D90000;
+	font-size: 24px;
+}
+#content .archive li a:hover {
+	color:#333;
 }
 .postsList {
 	list-style: none;

@@ -13,6 +13,7 @@ duoshuoShortname: sync
 navigation:
 - text: Home
   url: / 
+  layout: post
 - text: Archive
   url: /archive/
 - text: About
