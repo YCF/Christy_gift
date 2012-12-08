@@ -65,6 +65,16 @@ overflow: hidden;
 	transition: margin-left .3s ease-out,width .3s ease-out;
 
 }
+.more {
+	font-size:32px;
+}
+.more a{
+	color:#D90000;
+	text-decoration: none;
+}
+.more a:hover {
+	color: #333;
+}
 #sidebar .nav {
 	margin: 65px 0 0 0;
 	padding: 0;
