@@ -1,16 +1,9 @@
 <div id="home">
 <ul class="postsList">
 {% for post in site.posts limit: 15 %}
-{% if forloop.index < 4 %}
-<div class="toppost">
-<h1><a href="{{ post.url }}">{{ post.title }}</a> <small class="pull-right">{{ post.date | date:"%b %d, %Y" }}</small></h1>
-{{ post.content | truncate:120 }}
-</div>
 
-{% endif %}
-{% if forloop.index > 3 %}
 <li><span>{{ post.date | date: "%b %d, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}
+
 {% endfor %}
 
 </ul>
