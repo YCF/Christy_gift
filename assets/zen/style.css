@@ -71,16 +71,18 @@ overflow: hidden;
 }
 #sidebar .nav li.current a{	
 	height:40px;
-	margin-left:89px;
-	background-position: 0 -35px;
-	width:95px;
+	margin-left:84px;
+	background-position: 5px -35px;
+	width:75px;
 	line-height: 50px;
 	padding:0;
+	text-align: left;
+	padding-left:20px;
 	position: absolute;
 	text-indent: 0;
 }
 #sidebar .nav li.current a:hover{
-	margin-left:89px;
+	margin-left:84px;
 	width:95px;
 }
 #sidebar .nav li a:hover {
