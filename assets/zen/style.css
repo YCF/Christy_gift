@@ -217,6 +217,9 @@ line-height: 1.4em;
 	border-left:1px solid #D93600;
 	padding:15px;
 	margin-left:90px;
+	line-height: 1.5em;
+	font-size:18px;
+	color:#444;
 
 }
 .post h1 a{
