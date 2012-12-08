@@ -67,6 +67,7 @@ overflow: hidden;
 }
 .more {
 	font-size:32px;
+	margin-left:60px;
 }
 .more a{
 	color:#D90000;
