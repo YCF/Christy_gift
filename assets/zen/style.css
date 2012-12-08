@@ -126,7 +126,14 @@ border-top-left-radius:5px;
 
 }
 .toppost {
-	margin-bottom:30px;
+	width:580px;
+	border-left:1px solid #D93600;
+	padding:15px;
+	margin-left:90px;
+	margin-bottom: 30px;
+	line-height: 1.5em;
+	font-size:16px;
+	color:#444;
 }
 .toppost h1 a{
 	text-align: left;
@@ -232,6 +239,7 @@ line-height: 1.4em;
 	border-left:1px solid #D93600;
 	padding:15px;
 	margin-left:90px;
+	margin-bottom: 30px;
 	line-height: 1.5em;
 	font-size:16px;
 	color:#444;
