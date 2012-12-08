@@ -138,7 +138,9 @@ margin-left: 100px;
 	padding:0;
 }
 #content .archive li{
+	position: relative;
 	width: 570px;
+	line-height: 1.5em;
 	list-style: none;
 margin: 10px auto 10px 0px;
 padding-right: 20px;
@@ -149,11 +151,17 @@ padding-bottom: 20px;
 		color:#808080;
 	font-size:16px;
 	margin-right: 20px;
+	position: absolute;
+top: 9px;
 }
 #content .archive li a{
 		text-decoration: none;
 	color:#D90000;
 	font-size: 24px;
+	display: inline-block;
+width: 450px;
+margin-left: 120px;
+line-height: 1.4em;
 }
 #content .archive li a:hover {
 	color:#333;
@@ -162,8 +170,10 @@ padding-bottom: 20px;
 	list-style: none;
 	padding:0;
 }
-.postsList>li {
+.postsList li {
+	position: relative;
 width: 570px;
+line-height: 1.5em;
 margin: 10px auto 10px 90px;
 padding-right: 20px;
 padding-left: 20px;
@@ -172,13 +182,18 @@ padding-bottom: 20px;
 .postsList li span {
 	color:#808080;
 	font-size:16px;
-	margin-right: 20px;
+		margin-right: 20px;
+	position: absolute;
+top: 9px;
 }
 .postsList li a {
 	text-decoration: none;
 	color:#D90000;
 	font-size: 24px;
-
+	display: inline-block;
+width: 450px;
+margin-left: 120px;
+line-height: 1.4em;
 }
 .postsList li a:hover {
 	color: #333;
