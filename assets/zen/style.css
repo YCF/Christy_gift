@@ -123,6 +123,7 @@ border-top-left-radius:5px;
 #content .topbar a.rss{
 	float:right;
 	margin-right: 14px;
+	line-height: 43px;
 }
 #content .topbar a:hover{
 	color: #fafafa;
