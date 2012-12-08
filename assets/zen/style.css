@@ -133,6 +133,8 @@ margin-left: 100px;
 }
 #content .archive h2 {
 	color:#a8a8a8;
+	font-size: 36px;
+margin-left: -10px;
 }
 #content .archive ul {
 	padding:0;
