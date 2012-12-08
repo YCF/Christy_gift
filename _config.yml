@@ -13,6 +13,8 @@ duoshuoShortname: sync
 navigation:
 - text: Home
   url: / 
+- text: Blog
+  url: /Blog/
 - text: Archive
   url: /archive/
 - text: About
