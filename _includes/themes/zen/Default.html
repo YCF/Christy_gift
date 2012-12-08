@@ -28,10 +28,10 @@
                         {% for link in site.navigation %} 
                         {% assign current = nil %} 
                         {% if page.url == link.url or page.layout == link.layout %} 
-                        {% assign current = ' class="current" %} 
+                        {% assign current = ' class="current"' %} 
                         {% endif %}
                         <li{{ current }}>
-                            <a class="{{ current }}" href="{{ link.url }}">
+                            <a href="{{ link.url }}">
                                 {{ link.text }}
                             </a>
                         </li>
