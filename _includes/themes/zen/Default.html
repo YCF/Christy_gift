@@ -29,6 +29,8 @@
                         {% assign current = nil %} 
                         {% if page.url == link.url or page.layout == link.layout %} 
                         {% assign current = ' class="current"' %} 
+                        {% else %}
+                        hello
                         {% endif %}
                         <li{{ current }}>
                             <a href="{{ link.url }}">
