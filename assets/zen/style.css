@@ -65,6 +65,9 @@ overflow: hidden;
 	transition: margin-left .3s ease-out,width .3s ease-out;
 
 }
+a {color:#d90000;
+text-decoration: none;}
+a:hover{text-decoration: underline;}
 .more {
 	font-size:32px;
 	margin-left:60px;
@@ -121,6 +124,18 @@ border-top-right-radius:5px;
 border-top-left-radius:5px;
 
 
+}
+.toppost {
+	margin-bottom:30px;
+}
+.toppost h1 a{
+	text-align: left;
+color: #D90000;
+margin: 10px;}
+.toppost h1 small {
+	font-size: 14px;
+float: right;
+margin-right: 30px;
 }
 #content .topbar a{
 	color:#616161;
