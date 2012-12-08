@@ -137,22 +137,22 @@ margin-left: 100px;
 	list-style: none;
 	padding:0;
 }
-.postList li {
+.postsList li {
 width: 570px;
 margin: 10px auto 10px 90px;
-font-size: 18px;
 padding-right: 20px;
 padding-left: 20px;
 padding-bottom: 20px;
 border-bottom: 1px dashed #777;}
 .postsList li span {
 	color:#808080;
-	font-size:12px;
+	font-size:16px;
 	margin-right: 20px;
 }
 .postsList li a {
 	text-decoration: none;
 	color:#D90000;
+	font-size: 24px;
 
 }
 .postsList li a:hover {
