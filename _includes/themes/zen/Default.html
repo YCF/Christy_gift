@@ -27,12 +27,10 @@
                     <ul class="nav">
                         {% for link in site.navigation %} 
                         {% assign current = nil %} 
-                        {% if page.url == link.url or page.layout == link.layout or page.layout == 'post' %} 
-                        {% assign current = 'current' %} 
+                        {% if page.url == link.url or page.layout == link.layout %} 
+                        {% assign current = ' class=\'current\'' %} 
                         {% endif %}
-                        test:{{ page.category }} 
-                        + {{ page.layout }} + {{ link.category }} + {{ link.layout }}
-                        <li class="{{ current }}">
+                        <li{{ current }}>
                             <a class="{{ current }}" href="{{ link.url }}">
                                 {{ link.text }}
                             </a>
