@@ -1,9 +1,9 @@
 ---
-date: 2013-02-10 00:00:00
+date: 2013-02-10 00:00:01
 title: Python年快乐
 layout: post
 tags:
-    - z-turn
+    - python
 categories:
     - Blog
 ---
