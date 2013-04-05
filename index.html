@@ -12,7 +12,17 @@
         <button id="start_btn" class="btn btn-primary btn-large centered">START</button>
         <div id="map_canvas" style="width:100%; height:100%;"></div>
         <div id="curtain"></div>
-        <div id="end_text" class="centered" style="margin-left: -250px">巴拉巴拉</div>
+
+
+
+
+        <div id="end_text" class="centered" style="margin-left: -250px">
+
+
+        <center>
+<canvas id="heart" width="400" height="400"></canvas>
+</center>
+           <p>Happy Valentine's Day,My Christy.</p><p style="text-align:center;">I Love You.</p></div>
         <audio preload="auto" id="music">
             <source src="music.mp3" type="audio/mpeg" />
         </audio>
@@ -74,7 +84,7 @@
                     $("#curtain").animate({
                         height: $(window).height()
                     }, 6000, function(){
-                        $("#end_text").fadeIn("slow");
+                        $("#end_text").fadeIn("slow",function(){drawHeart();});
                     });
                 }, 3000);
             }
@@ -123,7 +133,12 @@
                     { point: "43.97957, 15.38472", src: PHOTO_BASE + "5.jpeg" },
                     { point: "43.98028, 15.38552", src: PHOTO_BASE + "6.jpeg" },
                     { point: "43.97932, 15.38112", src: PHOTO_BASE + "7.jpeg" },
-                    { point: "43.97694, 15.38354", src: PHOTO_BASE + "8.jpeg" }
+                    { point: "43.97694, 15.38354", src: PHOTO_BASE + "8.jpeg" },
+                    { point: "43.97819, 15.38485", src: PHOTO_BASE + "9.jpeg" },
+                    { point: "43.97861, 15.38178", src: PHOTO_BASE + "10.jpeg" },
+                    { point: "43.97788, 15.38363", src: PHOTO_BASE + "11.jpeg" },
+                    { point: "43.97836, 15.38496", src: PHOTO_BASE + "12.jpeg" },
+                    { point: "43.97952, 15.38545", src: PHOTO_BASE + "13.jpeg" }
 
                 ];
                 var infowindows = [];
@@ -197,10 +212,10 @@
 
             var preloader = new PxLoader(); 
 
-            for(var i = 1; i <= 8; i++){
-                preloader.add( new PxLoaderImage("photos/" +  i + ".jpg"), "you" );
+            for(var i = 1; i <= 13; i++){
+                preloader.add( new PxLoaderImage("photos/" +i + ".jpg"), "you" );
             }
-            preloader.start(["you", "me"]);
+            preloader.start(["you"]);
 
 
         </script>
@@ -220,5 +235,76 @@
 
         </script>
 
+
+<script type="text/javascript">
+var canvas;
+var ctx;
+var rx = 200;
+var ry = 200;
+var radius = 180;
+var sleep = 0;
+var count = 0;
+ 
+function deg2rad(x)
+{
+    return x *Math.PI/180;
+}
+ 
+function drawCircle(x, y, r)
+{
+    ctx.beginPath();
+    ctx.arc(x,y,r,0,Math.PI*2,true);
+    ctx.stroke();
+}
+ 
+function drawLine(x1, y1, x2, y2)
+{
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.stroke();
+    if (count++ == 82)  {
+        count = 0;
+        document.getElementById('redraw').disabled = false;
+        sleep = 0;
+    }
+}
+ 
+function drawSide(begin1, end1, step1, begin2, step2)
+{
+    var d1, d2, x1, y1, x2, y2;
+ 
+    while (begin1 != end1+step1) {
+       d1 = deg2rad(begin1);
+       d2 = deg2rad(begin2);
+       x1 = rx + radius * Math.cos(d1);
+       y1 = ry - radius * Math.sin(d1);
+       x2 = rx + radius * Math.cos(d2);
+       y2 = ry - radius * Math.sin(d2);
+       setTimeout('drawLine(' + x1 + ',' + y1 + ',' + x2 + ',' + y2 + ')', sleep*100);
+       sleep++;
+ 
+       begin1 += step1;
+       begin2 += step2;
+   }
+}
+ 
+function drawHeart()
+{
+   // document.getElementById('redraw').disabled = true;
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    ctx.strokeStyle = "black";
+    drawCircle(rx, ry, radius, ctx);
+    ctx.strokeStyle = "red";
+    drawSide(-90, 0, 4.5, 0, 4.5);
+    drawSide(-90, -180, -4.5, -180, -4.5);
+    drawSide(0, 180, 4.5, 90, 9);
+}
+(function() {
+    canvas = document.getElementById('heart');
+    ctx = canvas.getContext('2d');
+
+})();
+</script>
     </body>
 </html>
