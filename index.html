@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <meta name="author" content="wong2" />
+        <meta name="author" content="Fengz" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVwtjIUmIdX-GInth2K3C0D59PZ2Qoz3Q&sensor=false"></script>
@@ -12,13 +12,7 @@
         <button id="start_btn" class="btn btn-primary btn-large centered">START</button>
         <div id="map_canvas" style="width:100%; height:100%;"></div>
         <div id="curtain"></div>
-
-
-
-
         <div id="end_text" class="centered" style="margin-left: -250px">
-
-
         <center>
 <canvas id="heart" width="400" height="400"></canvas>
 </center>
@@ -84,8 +78,7 @@
                     $("#curtain").animate({
                         height: $(window).height()
                     }, 6000, function(){
-                        $("#end_text").fadeIn("slow",function(){drawHeart();});
-                        
+                        $("#end_text").fadeIn("slow",function(){drawHeart();});           
                     });
                 }, 3000);
             }
@@ -103,7 +96,9 @@
                     { point: "61.5, 88.6", text: "Я люблю тебя" },
                     { point: "36.6, 138.9", text: "私はあなたを愛して" },
                     { point: "36.9, 127.6", text: "난 널 사랑해" },
+                    { point: "30.6, 114.3", text: "我爱你" },
                     { point: "30.6, 114.3", text: "我爱你" }
+                    
                 ];
                 var infowindows = [];
                 $.each(i_love_you_s, function(i, i_love_you){
@@ -300,6 +295,7 @@ function drawHeart()
     drawSide(-90, 0, 4.5, 0, 4.5);
     drawSide(-90, -180, -4.5, -180, -4.5);
     drawSide(0, 180, 4.5, 90, 9);
+    callback();
 }
 (function() {
     canvas = document.getElementById('heart');
